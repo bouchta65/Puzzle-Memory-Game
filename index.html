@@ -3,66 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="game.css">
-    <style>
-
-    </style>
+    <title>Fade In Background</title>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <div class="title">
-        <h2>Test Your Memory with Memory Game </h2>
-        <h1><b>Level 1</b></h1>
-        <h1 class="message" id="resultMessage"></h1>
-    </div>
-    <div class="global">
-     
-        <div class="contenu">
-            <div class="container">
-                
-                <div class="flip-card" id="flipcard" >
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front" >
-                            Back 1
-                        </div>
-                        <div class="flip-card-back" id="box1">
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card" id="flipcard1">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front" >
-                            Back 1
-                        </div>
-                        <div class="flip-card-back" id="box2">
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card" id="flipcard2">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front" >
-                            Back 1
-                        </div>
-                        <div class="flip-card-back" id="box3">
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card" id="flipcard3">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front" >
-                            Back 1
-                        </div>
-                        <div class="flip-card-back" id="box4">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-container">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <p class="loading-text">Loading, please wait...</p> 
         </div>
     </div>
-    <script src="game.js"></script>
+
+    <div class="background"></div>
+
+    <div class="rules-container">
+        <h1 id="Titre"></h1>
+        <p id="rulesText"></p>
+        <p id="rulesText2"></p>
+        <p id="rulesText3"></p>
+        <br> <br>
+
+    </div>
+
+
+        <div id="butt" class="button-container ">
+            <button class="button-92" role="button">Start The Game</button>
+        </div>
+
+        <div id="butt2" class="button-container2">
+            <button class="button-92" role="button">Game Rules</button>
+        </div>
+        
+
+
+
+    
+    <script src="index.js"></script>
 </body>
 </html>
