@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+
+body{
+    background-image: url(../images/BACKGROUND2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: sepia(50%) brightness(0.8) contrast(1.2); /* Apply color filter (sepia, brightness, contrast) */
+
+}
+
+.global{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:700px;
+    
+    justify-content: center;
+}
+
+.title{
+margin-top: 20px;
+font-size: 50px;
+}
+
+.rule-item{
+    height: 100px;
+    width: 600px;
+    box-shadow: 5px 5px 5px brown;
+    text-align: center;
+    margin-top: 30px;
+    font-size: xx-large;
+    font-weight: bolder;
+display: flex;
+justify-content: space-around;
+background-color: antiquewhite;
+border-radius: 5px;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.box1{
+    height: 100px;
+    width: 600px;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+    margin-top: 100px;
+    font-size: xx-large;
+    font-weight: bolder;
+
+    background-color: antiquewhite;
+    display: flex;
+justify-content: space-around;
+border-radius: 10px;
+
+}
