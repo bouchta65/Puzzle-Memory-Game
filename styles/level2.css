@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/backgrounds/LevelsBackground.jpg");
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    font-family: 'Press Start 2P';
+    font-size: 20px;
+    color: #00ff00; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 20px;
+    top: 45%; 
+}
+.rick-morty-button {
+    position: absolute;
+    bottom: 20px; 
+    right: 20px; 
+    padding: 15px 25px;
+    background-color: #00BFFF;
+    color: #FFF;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px; /* Font size */
+    text-decoration: none; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s; 
+}
+
+.rick-morty-button:hover {
+    background-color: #FF4500;
+}
+
+
+#container {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(4, 175px);
+}
+
+#container div {
+    width: 175px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.flip-card {
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card.flip .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+}
+
+.flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+#box1 {
+    background-image: url(../images/levels/1.png);
+    background-color: #009688;
+}
+
+#box2 {
+    background-image: url(../images/levels/2.png);
+    background-color: #ff00ff;
+}
+
+#box3 {
+    background-image: url(../images/levels/3.png);
+    background-color: chocolate;
+}
+
+#box4 {
+    background-image: url(../images/levels/4.png);
+    background-color: #ff5733;
+}
+
+#box5 {
+    background-image: url(../images/levels/5.png);
+    background-color: #33c3ff;
+}
+
+#box6 {
+    background-image: url(../images/levels/6.png);
+    background-color: #ffc300;
+}
+
+#box7 {
+    background-image: url(../images/levels/7.png);
+    background-color: #ffb3ff;
+}
+
+#box8 {
+    background-image: url(../images/levels/8.png);
+    background-color: #33ff57;
+}
+
+#box9 {
+    background-image: url(../images/levels/9.png);
+    background-color: #c70039;
+}
+
+#box10 {
+    background-image: url(../images/levels/10.png);
+    background-color: #581845;
+}
+
+#box11 {
+    background-image: url(../images/levels/11.png);
+    background-color: #900C3F;
+}
+
+#box12 {
+    background-image: url(../images/levels/12.png);
+    background-color: #FFC300;
+}
