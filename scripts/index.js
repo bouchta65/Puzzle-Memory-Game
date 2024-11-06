@@ -1,11 +1,10 @@
-const loadingScreen = document.getElementById("loadingScreen");
-const buttoncontainer = document.getElementById("butt");
-const buttoncontainer2 = document.getElementById("butt2");
+const button = document.getElementById("butt");
+const button2 = document.getElementById("butt2");
+
 
 setTimeout(() => {
     document.querySelector('.background').classList.add('show');
-    loadingScreen.classList.add('hidden');
-}, 5000);
+},10);
 
 setTimeout(() => {
     const titre = document.getElementById('Titre');
@@ -20,7 +19,24 @@ setTimeout(() => {
         }
     }
     typeCharacter();
-}, 7000);
+}, 1000);
+
+
+
+setTimeout(() => {
+    const titre = document.getElementById('TitreWin');
+    const titretext = "Level1... ";
+    let index = 0;
+
+    function typeCharacter() {
+        if (index < titretext.length) {
+            titre.textContent += titretext.charAt(index);
+            index++;
+            setTimeout(typeCharacter, 50); 
+        }
+    }
+    typeCharacter();
+}, 1000);
 
 
 
@@ -29,21 +45,11 @@ setTimeout(() => {
 
 
 setTimeout(() => {
-    buttoncontainer.classList.add('show');
-}, 9000);
+    button.classList.add('show');
+}, 3000);
 
 setTimeout(() => {
-    buttoncontainer2.classList.add('show');
-}, 9000);
+    button2.classList.add('show');
+}, 3000);
 
 
-buttoncontainer.addEventListener('click',()=>{
-    window.location.href = './pages/level1.html';
-
-   })
-
-
-   buttoncontainer2.addEventListener('click',()=>{
-    window.location.href = './pages/rules.html';
-
-   })
