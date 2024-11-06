@@ -23,20 +23,7 @@ setTimeout(() => {
 
 
 
-setTimeout(() => {
-    const titre = document.getElementById('TitreWin');
-    const titretext = "Level1... ";
-    let index = 0;
 
-    function typeCharacter() {
-        if (index < titretext.length) {
-            titre.textContent += titretext.charAt(index);
-            index++;
-            setTimeout(typeCharacter, 50); 
-        }
-    }
-    typeCharacter();
-}, 1000);
 
 
 
