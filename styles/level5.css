@@ -1,8 +1,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../images/backgrounds/LevelsBackground.jpg");
+    background-image: url("../images/backgrounds/3221.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 h1{
     font-family: 'Press Start 2P';
@@ -41,7 +43,7 @@ h1{
     align-items: center;
     align-content: center;
     gap: 10px;
-    grid-template-columns: repeat(6, 131.25px);
+    grid-template-columns: repeat(6, 180.25px);
 }
 
 #container div {

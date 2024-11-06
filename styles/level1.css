@@ -1,8 +1,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/backgrounds/thumb-1920-1334910.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 h1{
     font-family: 'Press Start 2P';
@@ -21,7 +23,7 @@ h1{
     background-color: #00BFFF;
     color: #FFF;
     font-family: 'Arial', sans-serif;
-    font-size: 20px; /* Font size */
+    font-size: 20px;
     text-decoration: none; 
     border-radius: 5px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
