@@ -1,0 +1,70 @@
+#poopup{
+    display: none;
+}
+
+.popup{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+    z-index: 10;
+    position: fixed; 
+    top: 0;
+    left: 0;
+}
+.popup-content {
+    background: linear-gradient(135deg, #ff6b6b, #f8b400, #95af4c, #00bcd4, #673ab7);
+    background-size: 200% 200%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 80%;
+    animation: gradientShiftContent 8s ease infinite;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+  
+  .popup-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .titlepop {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  #next-butt {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #next-butt a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  #next-butt:hover {
+    background-color: #218838;
+  }
+  
+  
+  @keyframes gradientShiftContent {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  
+  }
+  
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
