@@ -23,6 +23,7 @@ body, html {
     opacity: 1; 
 }
 
+
 .loading-screen {
     position: fixed;
     top: 0;
@@ -35,10 +36,6 @@ body, html {
     align-items: center;
     transition: opacity 1s ease;
     z-index: 1000;
-}
-
-.hidden {
-    display: none; 
 }
 
 .loading-container {
