@@ -1,0 +1,39 @@
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.rules-container {
+    position: absolute;
+    right: 85%;
+    top: 93%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 600px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+#TitreWin{
+    font-family: 'Orbitron', sans-serif;
+    color: black; 
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
